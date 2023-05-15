@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Profile</title>
+    <style>
+      body {
+        display: flex;
+      }
+      #sidebar {
+        width: 110px;
+        background-color: #f2f2f2;
+      }
+      #content {
+        padding-left: 20px;
+        width: 100%;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sidebar">
+      <table>
+        <tr>
+          <td><a href="home.html">Home</a></td>
+        </tr>
+        <tr>
+          <td><a href="explore.html">Explore</a></td>
+        </tr>
+        <tr>
+          <td><a href="notifications.html">Notifications</a></td>
+        </tr>
+        <tr>
+          <td><a href="messages.html">Messages</a></td>
+        </tr>
+        <tr>
+          <td><a href="bookmarks.html">Bookmarks</a></td>
+        </tr>
+        <tr>
+          <td><a href="lists.html">Lists</a></td>
+        </tr>
+        <tr>
+          <td><a href="profile.html">Profile</a></td>
+        </tr>
+        <tr>
+          <td><a href="tuit.html">Tuit</a></td>
+        </tr>
+        <tr>
+          <td><a href="reply.html">Reply</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="content">
+      <a href="profile.html">Back</a>
+      <h1>Tuiter</h1>
+      <h2>Edit Profile</h2>
+      <a href="profile.html">Save</a>
+      <img src="wallpaper.jpg" height="200px" width="100%" /><br />
+      <input type="file" accept="image/*" /><br />
+      <img src="rick.png" height="48px" width="48px" /><br />
+      <input type="file" accept="image/*" /><br />
+      <hr />
+      <label for="pname">Name</label><br />
+      <input type="text" value="WebDev" placeholder="Name" id="pname" /><br />
+      <hr />
+      <label for="pbio">Bio</label><br />
+      <textarea id="pbio" rows="10" cols="50">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</textarea
+      >
+    </div>
+  </body>
+</html>
