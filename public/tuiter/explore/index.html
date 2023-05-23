@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="index2.css" />
+    <title>Three Columns</title>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col-sm-1"></div>
+
+      <div class="col-sm-2">
+        <div class="list-group">
+          <a
+            href="explore-css.html"
+            class="list-group-item list-group-item-action"
+            aria-current="true"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="../home.html"
+            class="list-group-item list-group-item-action d-flex align-items-center"
+            ><i class="fas fa-home"></i>
+            <span class="spacer d-none d-lg-block">Home</span></a
+          >
+          <a
+            href="../explore/index.html"
+            class="list-group-item list-group-item-action active d-flex align-items-center"
+            ><i class="fas fa-compass"></i>
+            <span class="spacer d-none d-lg-block"> Explore</span></a
+          >
+          <a
+            href="../notifications.html"
+            class="list-group-item list-group-item-action d-flex align-items-center"
+            ><i class="far fa-bell"></i>
+            <span class="spacer d-none d-lg-block"> Notifications</span></a
+          >
+          <a
+            href="../messages.html"
+            class="list-group-item list-group-item-action d-flex align-items-center"
+            ><i class="far fa-envelope"></i>
+            <span class="spacer d-none d-lg-block"> Messages</span></a
+          >
+          <a
+            href="../bookmarks/bookmarks-css.html"
+            class="list-group-item list-group-item-action d-flex align-items-center"
+            ><i class="far fa-bookmark"></i>
+            <span class="spacer d-none d-lg-block"> Bookmarks</span></a
+          >
+          <a
+            href="../lists.html"
+            class="list-group-item list-group-item-action d-flex align-items-center"
+            ><i class="far fa-list-alt"></i>
+            <span class="spacer d-none d-lg-block"> Lists</span></a
+          >
+          <a
+            href="../profile.html"
+            class="list-group-item list-group-item-action d-flex align-items-center"
+            ><i class="far fa-user"></i>
+            <span class="spacer d-none d-lg-block"> Profile</span></a
+          >
+          <a
+            href="../explore/explore-css.html"
+            class="list-group-item list-group-item-action d-flex align-items-center"
+            ><i class="fas fa-ellipsis-h"></i>
+            <span class="spacer d-none d-lg-block"> More</span></a
+          >
+        </div>
+        <div class="text-center">
+          <button class="btn btn-primary rounded-pill wd-tweetbutton">
+            Tweet
+          </button>
+        </div>
+      </div>
+      <div class="col-sm-5 d-lg-inline">
+        <div class="input-group mt-1 wd-size2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="search-addon"
+          />
+          <div class="wd-divider"><i class="fa-solid fa-gear"></i></div>
+        </div>
+        <ul class="nav nav-tabs mt-3" id="myTabs" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="for-you-tab"
+              data-toggle="tab"
+              href="for-you.html"
+              role="tab"
+              aria-controls="for-you"
+              aria-selected="true"
+              >For You</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="trending-tab"
+              data-toggle="tab"
+              href="trending.html"
+              role="tab"
+              aria-controls="trending"
+              aria-selected="false"
+              >Trending</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="news-tab"
+              data-toggle="tab"
+              href="news.html"
+              role="tab"
+              aria-controls="news"
+              aria-selected="false"
+              >News</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="sports-tab"
+              data-toggle="tab"
+              href="sports.html"
+              role="tab"
+              aria-controls="sports"
+              aria-selected="false"
+              >Sports</a
+            >
+          </li>
+          <li class="nav-item d-none d-sm-block">
+            <a
+              class="nav-link"
+              id="entertainment-tab"
+              data-toggle="tab"
+              href="entertainment.html"
+              role="tab"
+              aria-controls="entertainment"
+              aria-selected="false"
+              >Entertainment</a
+            >
+          </li>
+        </ul>
+        <div class="image-container">
+          <img src="../lebron.jpg" alt="Image" class="img-fluid" />
+          <div class="overlay">
+            <h3>Playoffs Going Good</h3>
+          </div>
+        </div>
+        <div class="tab-content mt-3" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="for-you"
+            role="tabpanel"
+            aria-labelledby="for-you-tab"
+          >
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <span class="wd-topicoftweet">Web Development</span><br />
+                    <span
+                      ><b
+                        >Javascript <i class="fa-solid fa-circle-check"></i
+                      ></b>
+                      <span class="wd-topicoftweet"> - 2h</span></span
+                    ><br />
+                    <span><b>JS is the best framework out there.</b></span
+                    ><br />
+                    <span class="wd-topicoftweet">12.3K Tweets</span><br />
+                  </div>
+                  <div class="col-md-2">
+                    <div class="rounded-square">
+                      <img src="../js.png" alt="Profile Image" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <span class="wd-topicoftweet">Mongo DB</span><br />
+                    <span
+                      ><b>Mongo DB <i class="fa-solid fa-circle-check"></i></b>
+                      <span class="wd-topicoftweet"> - 2h</span></span
+                    ><br />
+                    <span
+                      ><b>The most efficient data management system.</b></span
+                    ><br />
+                    <span class="wd-topicoftweet">12.3K Tweets</span><br />
+                  </div>
+                  <div class="col-md-2">
+                    <div class="rounded-square">
+                      <img src="../mongodb.png" alt="Profile Image" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <span class="wd-topicoftweet">Web Development</span><br />
+                    <span
+                      ><b>React JS</b>
+                      <span class="wd-topicoftweet"> - 2h</span></span
+                    ><br />
+                    <span><b>React JS is the best framework out there.</b></span
+                    ><br />
+                    <span class="wd-topicoftweet">12.3K Tweets</span><br />
+                  </div>
+                  <div class="col-md-2">
+                    <div class="rounded-square">
+                      <img src="../reactjs.png" alt="Profile Image" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <span class="wd-topicoftweet">JQuery</span><br />
+                    <span
+                      ><b>jQuery <i class="fa-solid fa-circle-check"></i></b>
+                      <span class="wd-topicoftweet"> - 2h</span></span
+                    ><br />
+                    <span><b>Useful for web development</b></span
+                    ><br />
+                    <span class="wd-topicoftweet">12.3K Tweets</span><br />
+                  </div>
+                  <div class="col-md-2">
+                    <div class="rounded-square">
+                      <img src="../jquery.png" alt="Profile Image" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 d-none d-md-block">
+        <ul class="list-group wd-shrink">
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6"><b>Who to Follow</b></div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="rounded-circle"
+                  src="../java.png"
+                  alt="Profile Image"
+                  width="48"
+                  height="48"
+                />
+              </div>
+              <div class="col-6">
+                <p class="mb-0">
+                  <b>Java </b><i class="fa-solid fa-circle-check"></i>
+                </p>
+                <p class="text-muted">@java</p>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="rounded-circle"
+                  src="../relativity.png"
+                  alt="Profile Image"
+                  width="48"
+                  height="48"
+                />
+              </div>
+              <div class="col-6">
+                <p class="mb-0">
+                  <b>Relativity </b><i class="fa-solid fa-circle-check"></i>
+                </p>
+                <p class="text-muted">@relativity</p>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="rounded-circle"
+                  src="../virgin.png"
+                  alt="Profile Image"
+                  width="48"
+                  height="48"
+                />
+              </div>
+              <div class="col-6">
+                <p class="mb-0">
+                  <b>Virgin Galactic </b
+                  ><i class="fa-solid fa-circle-check"></i>
+                </p>
+                <p class="text-muted">@virgingalactic</p>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="rounded-circle"
+                  src="../nasalog.png"
+                  alt="Profile Image"
+                  width="48"
+                  height="48"
+                />
+              </div>
+              <div class="col-6">
+                <p class="mb-0">
+                  <b>Nasa </b><i class="fa-solid fa-circle-check"></i>
+                </p>
+                <p class="text-muted">@nasa</p>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="rounded-circle"
+                  src="../teslalog.png"
+                  alt="Profile Image"
+                  width="48"
+                  height="48"
+                />
+              </div>
+              <div class="col-6">
+                <p class="mb-0">
+                  <b>Tesla </b><i class="fa-solid fa-circle-check"></i>
+                </p>
+                <p class="text-muted">@tesla</p>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+body {
+  display: flex;
+}
+
+#wd-sidebar {
+  width: 110px;
+  background-color: #f2f2f2;
+}
+
+.wd-colormetoblac {
+  color: black;
+}
+.wd-firstcontainer,
+.wd-image-container,
+.wd-tuitslisttab {
+  border: 1px solid #e6ecf0;
+}
+
+.wd-content {
+  padding-top: 10px;
+  padding-left: 450px;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+}
+
+.wd-search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f8fa;
+  border: 1px solid #e6ecf0;
+  border-radius: 50px;
+  padding: 4px 8px;
+  padding-left: 10px;
+  max-width: 500px;
+  width: 500px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.wd-outer-container {
+  max-width: 600px;
+  margin-left: -25px;
+}
+
+.fa-magnifying-glass {
+  color: gray;
+}
+
+.fa-gear {
+  color: gray;
+}
+#wd-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+.wd-search-tab {
+  padding-top: 10px;
+}
+#wd-search-input::placeholder {
+  color: rgb(123, 120, 120);
+}
+
+.wd-fa-search {
+  color: darkgrey;
+}
+.wd-divider {
+  width: 20px;
+  height: 1px;
+  background-color: transparent;
+  margin-right: -60px;
+  margin-top: -20px;
+}
+
+.wd-moreicon {
+  float: right;
+  margin-right: 40px;
+  color: gray;
+}
+
+.wd-tabs {
+  display: flex;
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+  justify-content: space-evenly;
+  color: gray;
+  font-weight: bold;
+}
+
+.wd-tab-label {
+  border-bottom: 2px solid transparent;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.wd-selected {
+  border-bottom-color: blue;
+  border-width: 3px;
+}
+
+.wd-horizontaltabs {
+  padding-left: 5px;
+}
+.wd-image-container {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  background-image: url("../lebron.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 2px;
+}
+
+.wd-image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.wd-tuits-list {
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+.wd-tuit-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.wd-username {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.wd-moreoption {
+  margin-right: 1px;
+}
+.wd-timestamp {
+  color: gray;
+}
+
+.wd-tuit-content {
+  margin-bottom: 10px;
+}
+
+.wd-tuit-content p {
+  margin: 0;
+}
+
+.wd-tuitslisttab {
+  margin-top: 2px;
+}
+.wd-topic {
+  color: grey;
+}
+
+ul {
+  list-style-type: none;
+}
