@@ -9,7 +9,7 @@ function ForLoops() {
   return (
     <div>
       <h1>Looping through arrays</h1>
-      stringArray2 = {stringArray2};
+      stringArray2 = {stringArray2}
     </div>
   );
 }
