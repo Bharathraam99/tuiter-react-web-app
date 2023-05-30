@@ -7,6 +7,10 @@ import ExploreScreen from "./explore-screen";
 import ProfileScreen from "./profile-screen";
 import WhoToFollowListItem from "./who-to-follow-list/who-to-follow-list-item";
 import WhoToFollowList from "./who-to-follow-list";
+import MoreScreen from "./more-screen.js";
+import MessageScreen from "./message-screen";
+import ListScreen from "./lists-screen";
+import NotificationScreen from "./notification-screen";
 import { Navigate } from "react-router";
 function Tuiter() {
   return (
@@ -22,6 +26,10 @@ function Tuiter() {
             <Route path="/explore" element={<ExploreScreen />} />
             <Route path="/bookmarks" element={<BookmarksScreen />} />
             <Route path="/profile" element={<ProfileScreen />} />
+            <Route path="/more" element={<MoreScreen />} />
+            <Route path="/notifications" element={<NotificationScreen />} />
+            <Route path="/lists" element={<ListScreen />} />
+            <Route path="/messages" element={<MessageScreen />} />
           </Routes>
         </div>
         <div className="col-3">

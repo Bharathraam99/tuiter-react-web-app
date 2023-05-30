@@ -24,15 +24,21 @@ function ExploreScreen() {
           />
         </div>
       </div>
-      <ul className="nav nav-pills mb-2 mt-2">
-        <li className="nav-item">
+      <ul className="nav-fill nav nav-pills mb-2 mt-2">
+        <li className="nav-item adjustwidth">
           <a className="nav-link active">For You</a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item adjustwidth">
           <a className="nav-link">Trending</a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item adjustwidth">
           <a className="nav-link">News</a>
+        </li>
+        <li className="nav-item adjustwidth">
+          <a className="nav-link">Sports</a>
+        </li>
+        <li className="nav-item d-none d-sm-inline adjustwidth">
+          <a className="nav-link">Entertainment</a>
         </li>
       </ul>
       <div className="position-relative mb-2">

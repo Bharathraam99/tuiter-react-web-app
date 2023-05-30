@@ -1,0 +1,8 @@
+.link-container {
+  display: flex;
+  align-items: center;
+}
+
+.fontIcon {
+  margin-right: 10px;
+}
