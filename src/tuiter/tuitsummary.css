@@ -6,3 +6,14 @@
 .borderprint {
   padding: 10px;
 }
+
+.custom-col {
+  margin-left: 20%;
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.temp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+}
+
+.liked-icon {
+  color: red;
+}
