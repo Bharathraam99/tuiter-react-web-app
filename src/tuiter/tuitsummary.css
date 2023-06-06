@@ -16,4 +16,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  position: absolute;
+  top: 5;
+  right: 5;
 }

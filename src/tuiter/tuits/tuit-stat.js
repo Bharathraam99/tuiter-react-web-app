@@ -12,7 +12,7 @@ const TuitStats = ({ tuit = {} }) => {
         <i className="fas fa-retweet"></i> <span>{tuit.retuits}</span>
       </div>
       <div className={`column ${tuit.liked ? "liked-icon" : ""}`}>
-        <i className="fas fa-heart"></i> <span>{tuit.likes}</span>
+        <i className="fas fa-heart"></i> <span className="wd-colorblack">{tuit.likes}</span>
       </div>
       <div className="column">
         <i class="fas fa-upload wd-movedown"></i>
