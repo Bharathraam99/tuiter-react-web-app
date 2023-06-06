@@ -6,16 +6,16 @@ const TuitStats = ({ tuit = {} }) => {
   return (
     <div className="temp">
       <div className="column">
-        <i className="fas fa-comment"></i> {tuit.replies}
+        <i className="fas fa-comment"></i> <span>{tuit.replies}</span>
       </div>
       <div className="column">
-        <i className="fas fa-retweet"></i> {tuit.retuits}
+        <i className="fas fa-retweet"></i> <span>{tuit.retuits}</span>
       </div>
       <div className={`column ${tuit.liked ? "liked-icon" : ""}`}>
-        <i className="fas fa-heart"></i> {tuit.likes}
+        <i className="fas fa-heart"></i> <span>{tuit.likes}</span>
       </div>
       <div className="column">
-        <i class="fas fa-upload"></i>
+        <i class="fas fa-upload wd-movedown"></i>
       </div>
     </div>
   );
