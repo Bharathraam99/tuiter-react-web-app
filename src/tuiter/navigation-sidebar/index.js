@@ -12,11 +12,12 @@ import {
   faCompass,
   faListAlt,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { useSelector } from "react-redux";
 import "./nav.css";
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
   const [ignore, tuiter, active] = pathname.split("/");
+  const { currentUser } = useSelector((state) => state.user);
 
   const links = [
     { label: "Home", icon: faHome },
@@ -54,6 +55,23 @@ const NavigationSidebar = () => {
           </div>
         </Link>
       ))}
+      {!currentUser && (
+        <Link className="list-group-item text-capitalize" to="/tuiter/login">
+          {" "}
+          Login{" "}
+        </Link>
+      )}
+      {!currentUser && (
+        <Link className="list-group-item text-capitalize" to="/tuiter/register">
+          Register
+        </Link>
+      )}
+      {currentUser && (
+        <Link className="list-group-item text-capitalize" to="/tuiter/profile">
+          {" "}
+          Profile{" "}
+        </Link>
+      )}
       <button className="btn btn-primary rounded-pill mt-3">Tuit</button>
     </div>
   );

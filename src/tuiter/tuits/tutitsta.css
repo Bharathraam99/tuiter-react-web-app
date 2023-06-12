@@ -11,10 +11,22 @@
   color: red;
 }
 
-.wd-movedown{
+.wd-movedown {
   margin-top: 3px;
 }
 
-.wd-colorblack{
+.wd-colorblack {
+  color: black;
+}
+
+.wd-extrawidth {
+  margin-top: 5px;
+}
+
+.liked {
+  color: red;
+}
+
+.not-liked {
   color: black;
 }

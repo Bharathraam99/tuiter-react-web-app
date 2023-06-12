@@ -6,6 +6,7 @@ import { BsBarChart } from "react-icons/bs";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { createTuit } from "./reducers/tuits-reducer";
 import { useDispatch } from "react-redux";
+import { createTuitThunk } from "./services/tuits-thunks";
 import "./index.css";
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState("");
@@ -15,7 +16,8 @@ const WhatsHappening = () => {
     const newTuit = {
       tuit: whatsHappening,
     };
-    dispatch(createTuit(newTuit));
+    // dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening("");
   };
   return (

@@ -4,7 +4,7 @@ import NavigationSidebar from "./navigation-sidebar";
 import HomeScreen from "./home-screen";
 import BookmarksScreen from "./bookmarks-screen";
 import ExploreScreen from "./explore-screen";
-import ProfileScreen from "./profile-screen";
+// import ProfileScreen from "./profile-screen";
 import WhoToFollowListItem from "./who-to-follow-list/who-to-follow-list-item";
 import WhoToFollowList from "./who-to-follow-list";
 import MoreScreen from "./more-screen.js";
@@ -13,12 +13,21 @@ import ListScreen from "./lists-screen";
 import NotificationScreen from "./notification-screen";
 import { Navigate } from "react-router";
 import whoReducer from "./reducers/who-reducer";
-import tuitsreducerExplore from "./reducers/tuits-reducerExplore"
+import tuitsreducerExplore from "./reducers/tuits-reducerExplore";
 import tuitsReducer from "./reducers/tuits-reducer";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
+import ProfileScreen from "./profile-screen";
+import LoginScreen from "./user/login-screen"
+import RegisterScreen from "./user/register";
+import authReducer from "./reducers/auth-reducer";
 const store = configureStore({
-  reducer: { who: whoReducer, tuits: tuitsReducer, explore: tuitsreducerExplore },
+  reducer: {
+    who: whoReducer,
+    tuits: tuitsReducer,
+    explore: tuitsreducerExplore,
+    user: authReducer,
+  },
 });
 function Tuiter() {
   return (
@@ -39,6 +48,9 @@ function Tuiter() {
               <Route path="/notifications" element={<NotificationScreen />} />
               <Route path="/lists" element={<ListScreen />} />
               <Route path="/messages" element={<MessageScreen />} />
+              <Route path="/login" element={<LoginScreen />} />
+              <Route path="/register" element={<RegisterScreen />} />
+              <Route path="/profile" element={<ProfileScreen />} />
             </Routes>
           </div>
           <div className="col-3">
