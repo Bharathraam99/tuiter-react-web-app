@@ -26,7 +26,7 @@ const NavigationSidebar = () => {
     { label: "Messages", icon: faEnvelope },
     { label: "Bookmarks", icon: faBookmark },
     { label: "Lists", icon: faListAlt },
-    { label: "Profile", icon: faUser },
+    // { label: "Profile", icon: faUser },
     { label: "More", icon: faEllipsisH },
   ];
 
@@ -57,19 +57,32 @@ const NavigationSidebar = () => {
       ))}
       {!currentUser && (
         <Link className="list-group-item text-capitalize" to="/tuiter/login">
-          {" "}
-          Login{" "}
+          <div className="link-container">
+            <span className="fontIcon">
+              <i class="fas fa-sign-in-alt"></i>
+            </span>
+            <span className="navText d-none d-lg-inline-block">Login</span>
+          </div>
         </Link>
       )}
       {!currentUser && (
         <Link className="list-group-item text-capitalize" to="/tuiter/register">
-          Register
+          <div className="link-container">
+            <span className="fontIcon">
+              <i class="fas fa-user-plus"></i>
+            </span>
+            <span className="navText d-none d-lg-inline-block">Register</span>
+          </div>
         </Link>
       )}
       {currentUser && (
         <Link className="list-group-item text-capitalize" to="/tuiter/profile">
-          {" "}
-          Profile{" "}
+          <div className="link-container">
+            <span className="fontIcon">
+              <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+            </span>
+            <span className="navText d-none d-lg-inline-block">Profile</span>
+          </div>
         </Link>
       )}
       <button className="btn btn-primary rounded-pill mt-3">Tuit</button>
