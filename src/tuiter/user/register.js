@@ -13,7 +13,9 @@ function RegisterScreen() {
     try {
       await dispatch(registerThunk({ username, password }));
 
-      navigate("/tuiter/profile");
+      setTimeout(() => {
+        navigate("/tuiter/profile");
+      }, 2000);
     } catch (e) {
       alert(e);
     }

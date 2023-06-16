@@ -14,7 +14,9 @@ function LoginScreen() {
   const handleLogin = async () => {
     try {
       await dispatch(loginThunk({ username, password }));
-      navigate("/tuiter/profile");
+      setTimeout(() => {
+        navigate("/tuiter/profile");
+      }, 2000);
     } catch (e) {
       alert(e);
     }
